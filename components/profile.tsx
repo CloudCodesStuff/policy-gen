@@ -67,7 +67,7 @@ export function ProfileForm({ onSubmit }: ProfileFormProps) {
                         <FormItem>
                             <FormLabel>Company Website</FormLabel>
                             <FormControl>
-                                <Input placeholder="example.com" {...field} />
+                                <Input placeholder="https://example.com" {...field} />
                             </FormControl>
                             <FormDescription>
                                 This is your companies website link.
