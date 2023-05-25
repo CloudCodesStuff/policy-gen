@@ -15,6 +15,7 @@ import { StyledKofiButton } from '@/components/kofibtn';
 
 
 
+
 export default function Home() {
   const { toast } = useToast()
 
@@ -22,7 +23,7 @@ export default function Home() {
   const [name, setName] = useState(String);
   const [url, setUrl] = useState(String);
   // Inside the Home component
-  const handleFormSubmit = (data) => {
+  const handleFormSubmit = (data: { email: string; name: string; url: string }) => {
     // Perform desired operations with the form data
     toast({
       description: "Your privacy policy has been created.",
