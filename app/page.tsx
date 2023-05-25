@@ -73,8 +73,8 @@ export default function Home() {
               <p>
                 This Privacy Policy outlines how {name} (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) collects,
                 uses, and protects your personal information when you visit our website at{" "}
-                <a href="{url}">{url}</a> or contact us via email at{" "}
-                <a href="mailto:{email}">{email}</a>. We are committed to maintaining the
+                <a className='text-muted-foreground' href="{url}">{url}</a> or contact us via email at{" "}
+                <a className='text-muted-foreground' href="mailto:{email}">{email}</a>. We are committed to maintaining the
                 privacy and security of your information and ensuring that it is used only in
                 accordance with this Privacy Policy.
               </p>
@@ -147,7 +147,7 @@ export default function Home() {
               <h2 className="font-bold">Contact Us</h2>
               <p>
                 If you have any questions, concerns, or suggestions regarding this Privacy
-                Policy, please contact us at <a href="mailto:{email}">{email}</a>.
+                Policy, please contact us at <a className='text-muted-foreground' href="mailto:{email}">{email}</a>.
               </p>
             </div>
 
