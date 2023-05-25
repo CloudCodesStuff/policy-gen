@@ -71,7 +71,7 @@ export default function Home() {
               <h1 className="font-bold">Privacy Policy</h1>
               <h2 className="font-bold">Introduction</h2>
               <p>
-                This Privacy Policy outlines how {name} ("we," "our," or "us") collects,
+                This Privacy Policy outlines how {name} (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) collects,
                 uses, and protects your personal information when you visit our website at{" "}
                 <a href="{url}">{url}</a> or contact us via email at{" "}
                 <a href="mailto:{email}">{email}</a>. We are committed to maintaining the
