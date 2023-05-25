@@ -41,11 +41,24 @@ export default function Home() {
 
       <div className='flex justify-center'>
         <Card className='flex flex-col w-full max-w-2xl gap-2.5'>
-          <CardHeader>
-            <CardTitle className='font-bold'>Privacy Policy Generator</CardTitle>
-            <CardDescription>
-              Generate a privacy policy in record time.
-            </CardDescription>
+
+          <CardHeader className='gap-y-2 gap-x-3 w-full justify-between flex-row'>
+            <div className='align-center flex-col flex gap-y-2'>
+              <CardTitle className='font-bold'>Privacy Policy Generator</CardTitle>
+              <CardDescription>
+                Generate a privacy policy in record time.
+              </CardDescription>
+            </div>
+
+            <a href="https://www.producthunt.com/posts/policy-gen?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-policy-gen" target="_blank" className='flex'>
+              <img
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=396347&theme=light"
+                alt="Policy/gen - Generate a privacy policy in under 30s | Product Hunt"
+                style={{ width: '250px', height: '54px' }}
+                width="250"
+                height="54"
+              />
+            </a>
           </CardHeader>
           <CardContent>
             <div className='flex flex-col w-full gap-3.5' >
