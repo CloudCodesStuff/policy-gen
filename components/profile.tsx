@@ -37,13 +37,23 @@ const formSchema = z.object({
     email: z.string().email({ message: "Must be a valid email" }),
 })
 
-export function ProfileForm({ onSubmit }) {
+export interface FormData {
+    url: string;
+    name: string;
+    email: string;
+}
+
+interface ProfileFormProps {
+    onSubmit: (data: FormData) => void;
+}
+
+export function ProfileForm({ onSubmit }: ProfileFormProps) {
     const form = useForm<FormData>({
         resolver: zodResolver(formSchema),
         mode: "onChange",
-    })
+    });
 
-    function handleFormSubmit(data) {
+    function handleFormSubmit(data: FormData) {
         // Invoke the onSubmit callback with the form data
         onSubmit(data);
     }
