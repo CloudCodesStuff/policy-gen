@@ -2,11 +2,11 @@ import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
 import { Manrope } from 'next/font/google'
 import { Space_Grotesk } from 'next/font/google'
-
 import { Inter } from 'next/font/google'
 import { StyledKofiButton } from '@/components/kofibtn'
 import { Nav } from '@/components/nav'
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react';
 const space = Inter({ subsets: ['latin'] })
 
 
@@ -57,6 +57,8 @@ export default function RootLayout({
         </div>
       </body>
       <Toaster></Toaster>
+      <Analytics />
+
     </html>
   )
 }
